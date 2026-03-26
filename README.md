@@ -26,7 +26,7 @@ Results Display	Shows disease name (and confidence score).
 User Flow	Simple tap → diagnose → view result → repeat.
 Getting Started
 Clone & Run the App
-git clone https://github.com/Uza1rxd/LeafGuardMobile.git
+git clone [https://github.com/Uza1rxd/LeafGuardMobile.git](https://github.com/MTZ029/LeafGuardMobile.git)
 cd LeafGuardMobile
 flutter pub get
 flutter run
