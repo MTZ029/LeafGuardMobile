@@ -1,50 +1,60 @@
-# Welcome to your Expo app 👋
+LeafGuardMobile
+AI-powered mobile app for plant disease detection – bridging agriculture & AI.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Flutter
+TensorFlow
+FastAPI
+License
 
-## Get started
+About LeafGuardMobile
+LeafGuardMobile empowers farmers with a simple mobile solution: snap a picture of a leaf, get a disease diagnosis powered by AI.
+Leveraging a TensorFlow model trained on the PlantVillage dataset (38 disease classes), the app delivers results fast—even offline using TFLite.
 
-1. Install dependencies
+Tech Stack & Highlights
+Layer	Technologies & Tools
+Mobile (UI)	Flutter (Dart), image_picker, http
+ML Model	TensorFlow/Keras → TensorFlow Lite (.tflite)
+Backend (Opt.)	FastAPI server with Python & Uvicorn
+Dataset	PlantVillage (54K+ images, 38 disease categories)
+Core Features	On-device inference, camera/gallery integration, menu-less UI
+Privacy & Use	No third-party cloud needed — offline ready
+Feature Snapshot
+Functionality	Details
+Leaf Detection	Use camera or gallery to load a leaf image.
+Model Inference	Runs TFLite model on-device or calls API.
+Results Display	Shows disease name (and confidence score).
+User Flow	Simple tap → diagnose → view result → repeat.
+Getting Started
+Clone & Run the App
+git clone https://github.com/Uza1rxd/LeafGuardMobile.git
+cd LeafGuardMobile
+flutter pub get
+flutter run
 
-   ```bash
-   npm install
-   ```
 
-2. Start the app
+Contributing
 
-   ```bash
-    npx expo start
-   ```
+Want to help?
 
-In the output, you'll find options to open the app in a
+Fork the repo
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Create a feature branch (e.g., feature/describe-diseases)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Commit & push your changes
 
-## Get a fresh project
+Open a pull request — we’ll review it with gratitude!
 
-When you're ready, run:
+Ideas:
 
-```bash
-npm run reset-project
-```
+Add disease descriptions or remedies
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Enhance UI/UX
 
-## Learn more
+Boost model accuracy or retraining pipelines
 
-To learn more about developing your project with Expo, look at the following resources:
+License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Proprietary (All Rights Reserved)
+This repo is publicly accessible, but requires written permission from the author for any reuse, modification, or distribution.
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+LeafGuardMobile — making plant disease diagnosis simple, smart, and accessible. Let's grow better, together.
